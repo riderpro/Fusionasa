@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+ <form method="POST" action="epigen_fusion" class="form-horizontal">
+   	{{form.hidden_tag()}}
+	<div class="col-sm-2">
+		<b>H-gene*:</b>
+	</div>
+	 <div class="col-sm-2">
+
+		{{form.h_gene(placeholder='H-GENE')}}
+	</div>
+
+	<div class="col-sm-8">
+	   	  {{form.submit(class="btn btn-primary")}}
+	</div>
+
+	<div class="col-sm-8">
+	<div class="alert alert-info" role="alert">
+		* fields are required
+</div>
+		<br>
+		OUTPUT:
+	   	  {{form.output(style="width:150%;height:300px;")}}
+      </div>
+      </div>
+</form>
+
+
+
+{% endblock content %}

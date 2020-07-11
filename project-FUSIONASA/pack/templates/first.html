@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card" style="width: 30rem;height:330px;float:left;background-image:url('/static/images/backdiv4.jpeg')" >
+  <img src="/static/images/region2.jpeg" class="card-img-top" alt="..." style="margin-top:15px;margin-left:auto;margin-right:auto;display:block">
+  <div class="card-body">
+    <h5 class="card-title" style="color:white">Disease wise annotation</h5>
+    <p class="card-text" style="color:white">Search the database on the basis of specific disease.</p>
+    <a href="/region" class="btn btn-primary">Search</a>
+  </div>
+</div>
+
+<div class="card" style="margin-left:10%;width: 30rem;height:330px;float:left;background-image:url('/static/images/backdiv4.jpeg')">
+  <img src="/static/images/variant2.jpeg" class="card-img-top" alt="..." style="margin-top:15px;margin-left:auto;margin-right:auto;display:block">
+  <div class="card-body">
+    <h5 class="card-title" style="color:white">Variant wise annotation</h5>
+    <p class="card-text" style="color:white">Search the database on the basis of variant type.Eg.Loss,Gain,etc</p>
+    <a href="/variant" class="btn btn-primary">Search</a>
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="card" style="width: 30rem;height:330px;float:left;background-image:url('/static/images/backdiv4.jpeg')">
+  <img src="/static/images/category.jpeg" class="card-img-top" alt="..." style="margin-top:15px;margin-left:auto;margin-right:auto;display:block">
+  <div class="card-body">
+    <h5 class="card-title" style="color:white">Gene wise annotation</h5>
+    <p class="card-text" style="color:white">Search database on the basis of gene</p>
+    <a href="/gene" class="btn btn-primary">Search</a>
+  </div>
+</div>
+
+
+
+<div class="card" style="margin-left:10%;width: 30rem;height:330px;float:left;background-image:url('/static/images/backdiv4.jpeg')">
+  <img src="/static/images/gene.jpeg" class="card-img-top" alt="..." style="margin-top:15px;margin-left:auto;margin-right:auto;display:block">
+  <div class="card-body">
+    <h5 class="card-title" style="color:white">Gene Category wise annotation</h5>
+    <p class="card-text" style="color:white">Search the database on the basis of gene category(gene-info)</p>
+    <a href="/category" class="btn btn-primary"  style="">Search</a>
+  </div>
+</div>
+
+
+
+{% endblock content %}

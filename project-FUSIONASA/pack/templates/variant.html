@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+ <span class="label label-success">You are successfully logged in</span>
+<br>
+<br>
+ <form method="POST" action="variant" class="form-horizontal">
+   	{{form.hidden_tag()}}
+	<div class="col-sm-2">
+		<b>Chromosome*:</b>
+	</div>
+
+	 <div class="col-sm-2">
+		{{form.chr(placeholder='chromosome number')}}
+	</div>
+	 <br>
+	 <br>
+	<div class="col-sm-2">
+		<b>Start*:</b>
+	</div>
+	 <div class="col-sm-2">
+
+		{{form.start(placeholder='start')}}
+	</div>
+	 <br>
+	 <br>
+	<div class="col-sm-2">
+		<b>End*:</b>&nbsp;
+	</div>
+	<div class="col-sm-2">
+		{{form.end(placeholder='end')}}
+	</div>
+	 <br>
+	 <br>
+	 <div class="col-sm-2">
+		<b>Variant-Type:</b>&nbsp;
+	</div>
+	<div class="col-sm-2">
+		{{form.var_type(placeholder='Variant-type')}}
+  </div>
+	 <br>
+	 <br>
+	<div class="col-sm-8">
+	   	  {{form.submit(class="btn btn-primary")}}
+	</div>
+
+	<div class="col-sm-8">
+	<div class="alert alert-info" role="alert">
+		* fields are required
+</div>
+		<br>
+		OUTPUT:
+	   	  {{form.output(style="width:150%;height:300px;")}}
+      </div>
+      </div>
+</form>
+{% endblock content %}
+
+
+	

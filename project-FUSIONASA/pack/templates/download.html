@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+{% set lst=os.listdir('flask-application/API/downloads') %}
+{% for i in lst %}
+<label>{{i}}</label>
+{% set str='file://'+os.getcwd()+'/flask-application/API/downloads/'+i %}
+<a href={{ str }}  download="donnn"><button type="button" class="btn btn-info">Download</button>dwn</a>
+<br>
+{% endfor %}
+
+{% endblock content %}

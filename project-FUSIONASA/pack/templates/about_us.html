@@ -1,0 +1,101 @@
+
+{% extends "layout2.html" %}
+{% block content %}
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="fusionasa.com"><img src="/static/images/logo.png" height="75px" width ="80px" style="margin-right:1em; ">F U S I O N A S A<span class="sr-only">(current)</span></a>
+		<div class="container">	 
+		  
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		</div>
+	</nav>
+
+	<div class="post" style="padding-left:15px;">
+
+
+		<div class="date" style = "margin-top:2em; ">Fusionasa</div>
+
+		<h2 style="margin-bottom: .5em;">About</h2>
+
+		<p class="quote">
+			At <a href="/">Fusionasa.com</a>, our objective is to analyse the root cause of the disease cancer with the help of genomics/epigenomics related data,  along with NGS nucleotide level information.
+			This may help the medical field to further carry on with some DNA level editing or some drug discovery issues.</p>
+
+		<p>
+			Fusion-Genetics is a highly scallable noSQL database, integrating genomic/epigenomic databases, along with the integration of the processed information from the raw DNA whole genome sequence (available as .bam files) of several ethnic group of H.Sapiens.
+In addition, all the NGS raw read sequences, along with its related information generated against each H.Sapiens data has also been integrated and annotated.
+		</p>
+		<p><ul>The databases integrated and annotated are categorized as follows:
+
+<li>DNA level structural alterations, including the database of genomic variants (DGV) and copy number variation in disease (CNVD).</li>
+		<li>Disease/Cancer related Genes, includes Tumor Associated Gene Database (Tag), Tumor Suppressor Gene Database (TsGene), and Catalogue of Somatic Mutations in Cancer (Cosmic).</li>
+<li>Genomic and Epigenomic annotations includes human gene nomenclature
+          HGNC database, Chimerdb annotation the fusion genes, and iMETHYL is
+          another integrated database in this regard, that  includes the human DNA
+	methylation information.</li>
+<li>Nucleotide Level annotations using NGS Technology, includes the processed information of binary alignment files along with the extracted information from NGS raw reads of Homo sapiens.
+</li></ul></p>
+		<hr>
+
+		<h3>The Databases</h3>
+		<div class="container">
+		<div class="row">
+		<div class="col">
+			<p>COSMIC</p>
+			<a	href="https://cancer.sanger.ac.uk/cosmic">
+				<img src="/static/images/cosmic.jpeg"  width="130" height="100">
+			</a>
+		</div>
+		<div class="col">
+			<p>DGV</p>
+			<a	href="http://dgv.tcag.ca/dgv/app/home">
+				<img src="/static/images/dgv.png"  width="200" height="100">
+			</a>
+		</div>
+		<div class="col">
+			<p>HGNC</p>
+			<a	href="https://www.genenames.org/">
+				<img src="/static/images/hgnc.svg"  width="130" height="100">
+			</a>
+		</div>
+		<div class="col">
+			<p>CNVD</p>
+			<a	href="https://omictools.com/cnvd-tool">
+				<img src="/static/images/cnvdok.jpeg"  width="100" height="100">
+			</a>
+		</div>
+		<div class="col">
+			<p>TSGENE</p>
+			<a	href="https://bioinfo.uth.edu/TSGene/">
+				<img src="/static/images/tsgene.gif"  width="100" height="100">
+			</a>
+		</div>
+		<div class="col">
+			<p>TAG</p>
+			<a	href="http://www.binfo.ncku.edu.tw/TAG/GeneDoc.php">
+				<img src="/static/images/tag.jpg"  width="150" height="100">
+			</a>
+		</div>
+		</div>
+		</div>
+
+
+	<!--<div class="post">
+		<div class="date">Fusionasa</div>
+
+		<h2 style="margin-bottom: .5em;">Frequently Asked Questions</h2>
+
+		<p class="quote">
+			You have questions, I have answers. Let's get started, shall we?
+		</p>
+		<h4>How can I navigate through the website ?</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis arcu turpis, interdum at enim ac, pulvinar vulputate mi. Aenean ac dolor id lacus finibus sagittis in quis felis. Nulla eu tellus sem. Nullam feugiat eu est eget tristique.</p>
+		<h4>I'm not tech savvy. Can I do this?</h4>
+		<p>Duis convallis velit cursus sem facilisis eleifend. Fusce ac lorem in nunc mattis tincidunt quis eu odio. Duis et dui cursus ipsum molestie sagittis tempus vitae ante. Cras sit amet suscipit metus. Nulla sollicitudin lectus nec volutpat mollis.</p>
+		<h4>What are the other requirements ?</h4>
+		<p>Morbi at dui ex. Curabitur quis urna nec massa finibus scelerisque.</p> 
+			</div>-->
+	</div>
+
+{% endblock content %}

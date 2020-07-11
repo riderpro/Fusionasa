@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   {% if title %}
+    <title>Fusionasa-{{ title }}</title>
+   {% else %}
+    <title>CANCER EPIGENETICS</title>
+    {% endif %}
+
+	  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+            
+</head>
+<body style="padding-top:70px">
+
+  
+   <nav class="navbar navbar-inverse navbar-fixed-top " >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">CANCER EPIGENETICS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/homepage">Home</a></li>
+      
+      <li><a href="/about">About</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    {% if current_user.is_authenticated %}
+    	<li><a href="/download">Downloads</a></li>
+    	<li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    {% else %}
+      <li><a href={{ url_for('register') }}><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    {% endif %}
+    </ul>
+  </div>
+</nav>
+
+<div style="margin:auto;width:60%;padding:10px;text-align:cente">{% block content %} {% endblock %}
+   </div>
+</body>
+
+</html>
+
+
+
